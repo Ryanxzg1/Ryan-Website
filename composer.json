@@ -8,8 +8,7 @@
         "php": "^8.2",
         "laravel/framework": "^11.9",
         "laravel/jetstream": "^5.3",
-        "laravel/tinker": "^2.9",
-        "ext-openssl": "*"
+        "laravel/tinker": "^2.9"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -44,8 +43,7 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
-        ],
-        "vercel-build": "touch database/database.sqlite && composer install --no-dev --optimize-autoloader"
+        ]
     },
     "extra": {
         "laravel": {
