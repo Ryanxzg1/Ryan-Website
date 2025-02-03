@@ -46,7 +46,7 @@
             "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
             "@php artisan migrate --graceful --ansi"
         ],
-         "vercel-build": "composer install && echo 'vercel build success'"
+        "vercel-build": "composer install --no-dev --optimize-autoloader && echo 'vercel build success'"
     },
     "extra": {
         "laravel": {
