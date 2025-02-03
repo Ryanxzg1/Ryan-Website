@@ -44,7 +44,7 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ],
-        "vercel-build": "touch database/database.sqlite && composer install --no-dev --optimize-autoloader && echo 'vercel build success'"
+        "vercel-build": "composer install"
     },
     "extra": {
         "laravel": {
